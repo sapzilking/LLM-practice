@@ -1,2 +1,3 @@
 openAI-API key
 venv/
+.env
