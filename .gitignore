@@ -1,3 +1,4 @@
 openAI-API key
 venv/
 .env
+chat_log.txt
