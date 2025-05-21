@@ -2,3 +2,5 @@ openAI-API key
 venv/
 .env
 day02/chat_log.txt
+day03/sample.txt
+day03/summary_output.txt
