@@ -42,3 +42,20 @@ LLM(대형 언어 모델)을 활용한 애플리케이션 개발 실습 리포�
    ```bash
    python day01/gpt_chatbot.py
 
+## Day 2: 대화형 GPT 챗봇 CLI
+
+### 주요 기능
+
+- 역할 선택 기능 (요약기, 영어 튜터, 번역기)
+- 명령어 기반 제어 (/save, /role, /help)
+- 대화 로그 저장 기능
+- .env 파일로 API 키 분리
+
+### 실행 방법
+
+1. 가상환경 활성화
+2. `.env` 파일 생성 후 API 키 입력
+3. 실행
+```bash
+python3 day02/interactive_chatbot.py
+
