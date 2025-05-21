@@ -19,6 +19,7 @@ def ask_gpt(prompt):
 def main():
     parser = argparse.ArgumentParser(description="텍스트 요약기")
     parser.add_argument("input_file", help="요약할 텍스트 파일 경로")
+    parser.add_argument("--output", "-o", default="day03/summary_output.txt", help="출력 파일명 (기본값: day03/summary_output.txt)")
     args = parser.parse_args()
 
     with open(args.input_file, "r", encoding="utf-8") as f:
@@ -27,7 +28,7 @@ def main():
     prompt = f"다음 텍스트를 간결하게 요약해줘:\n\n{text}"
     summary = ask_gpt(prompt)
 
-    with open("day03/summary_output.txt", "w", encoding="utf-8") as f:
+    with open(args.output, "w", encoding="utf-8") as f:
         f.write(summary)
 
     print("✅ 요약 완료: summary_output.txt에 저장됨")
